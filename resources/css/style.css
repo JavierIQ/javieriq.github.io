@@ -24,7 +24,7 @@ body, html {
 }
   
 .bg-dark {
-    background-color: #000 !important;
+    background-color: #252525 !important;
 }
   
 .container {
@@ -36,13 +36,18 @@ h1, h2, h3 {
 }
   
 p {
+    text-align: justify;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+a{
+    color: #252525;
 }
   
 #landing-page {
     height: 100vh;
-    background-color: #000;
+    background-color: #252525;
     color: #fff;
     position: relative;
     display: flex;
@@ -64,8 +69,8 @@ p {
 .icon-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    align-items: flex-end;
+}
   
   .icon-item {
     position: relative;
@@ -76,19 +81,27 @@ p {
   .icon-circle {
     width: 40px;
     height: 40px;
-    border: 2px solid white;
-    border-radius: 50%;
   }
   
   .icon-text {
     position: absolute;
     right: 50px;
-    color: red;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
   
   .icon-item:hover .icon-text {
     opacity: 1;
+  }
+
+  /* Media query to hide icons on smaller screens */
+@media (max-width: 768px) {
+    .icon-wrapper {
+      display: none;
+    }
   }
   
