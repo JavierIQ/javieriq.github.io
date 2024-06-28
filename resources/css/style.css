@@ -98,6 +98,19 @@ a{
     opacity: 1;
   }
 
+  .project-image {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* Media query to hide icons on smaller screens */
 @media (max-width: 768px) {
     .icon-wrapper {
