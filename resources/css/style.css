@@ -1,120 +1,95 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-} 
-
-.position-absolute {
-    position: absolute;
-}
-  
-.bottom-left {
-    bottom: 20px;
-    left: 20px;
+body {
+  font-family: 'Urbanist', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.5s ease;
 }
 
-.bottom-right {
-    bottom: 20px;
-    right: 20px;
-  }
-  
+.theme1 { background-color: #EDE8E4; color: #252525; }
+.theme2 { background-color: #3668ae; color: #ffcbdb; }
+.theme3 { background-color: #2a3127; color: #d6ebfc; }
+.theme4 { background-color: #252525; color: #EDE8E4; }
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.top-left {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.top-center {
+  text-align: center;
+  font-size: 16px;
+}
+
 .top-right {
-    top: 20px;
-    right: 20px;
-}
-  
-.bg-dark {
-    background-color: #252525 !important;
-}
-  
-.container {
-    max-width: 960px;
-}
-  
-h1, h2, h3 {
-    font-weight: bold;
-}
-  
-p {
-    text-align: justify;
-    font-size: 1.1rem;
-    line-height: 1.6;
+  display: flex;
+  justify-content: flex-end;
 }
 
-a{
-    color: #252525;
-}
-  
-#landing-page {
-    height: 100vh;
-    background-color: #252525;
-    color: #fff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-#about-me {
-    padding-top: 50px;
+.top-right a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px;
 }
 
-.social-icon {
-    margin-right: 16px;
-    margin-bottom: 16px;
-    width: 32px;
-    height: 32px;
+.top-right a:hover {
+  text-decoration: underline;
 }
 
-.icon-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+main {
+  text-align: center;
 }
-  
-  .icon-item {
-    position: relative;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
-  
-  .icon-circle {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .icon-text {
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .icon-item:hover .icon-text {
-    opacity: 1;
-  }
 
-  .project-image {
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: #f9f9f9;
-    text-align: center;
-    height: 100%;
-  }
-  
-  .project-image img {
-    max-width: 100%;
-    height: auto;
-  }
+h1 {
+  font-size: 140px;
+  font-family: 'Urbanist', sans-serif;
+  margin: 0;
+}
 
-  /* Media query to hide icons on smaller screens */
-@media (max-width: 768px) {
-    .icon-wrapper {
-      display: none;
-    }
-  }
-  
+.intro {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px 0;
+}
+
+.content-text {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px 0;
+}
+
+.location {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0;
+}
+
+.social-landing {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.social-landing a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 5px;
+}
+
+.social-landing a:hover {
+  text-decoration: underline;
+}
