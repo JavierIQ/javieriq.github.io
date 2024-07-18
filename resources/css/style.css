@@ -1,18 +1,8 @@
 body {
   font-family: 'Urbanist', sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   transition: all 0.5s ease;
 }
-
-.theme1 { background-color: #EDE8E4; color: #252525; }
-.theme2 { background-color: #3668ae; color: #ffcbdb; }
-.theme3 { background-color: #2a3127; color: #d6ebfc; }
-.theme4 { background-color: #252525; color: #EDE8E4; }
 
 header {
   width: 100%;
@@ -49,6 +39,10 @@ header {
 
 main {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h1 {
@@ -93,3 +87,47 @@ h1 {
 .social-landing a:hover {
   text-decoration: underline;
 }
+
+/* Projects Section */
+#projects {
+  padding: 100px 0;
+  background-color: #EDE8E4;
+}
+
+.projects-title {
+  font-size: 80px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.projects-subtitle {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 12vw;
+  }
+
+  .intro {
+    font-size: 5vw;
+  }
+
+  .content-text, .location {
+    font-size: 3vw;
+  }
+
+  .projects-title {
+    font-size: 12vw;
+  }
+
+  .projects-subtitle {
+    font-size: 4vw;
+  }
+}
+
+.theme1 { background-color: #EDE8E4; color: #252525; }
+.theme2 { background-color: #3668ae; color: #ffcbdb; }
+.theme3 { background-color: #2a3127; color: #d6ebfc; }
+.theme4 { background-color: #252525; color: #EDE8E4; }
