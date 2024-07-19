@@ -217,6 +217,14 @@ img.img-fluid {
     font-size: 12vw;
   }
 
+  .social-landing {
+    text-align: center;
+    margin-top: 20px; /* Add some space above if needed */
+  }
+
+  .social-landing a {
+    display: inline-block;
+  }
   .intro {
     font-size: 5vw;
   }
@@ -235,6 +243,8 @@ img.img-fluid {
 
   .projects-subtitle {
     font-size: 4vw;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .parallax {
