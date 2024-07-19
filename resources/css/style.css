@@ -133,6 +133,18 @@ img.img-fluid {
   height: auto;
 }
 
+/* Adjusting desktop-specific styles */
+@media (min-width: 992px) {
+  #projects {
+    padding: 50px 0; /* Adjusted padding for larger screens */
+  }
+
+  .project {
+    padding-left: 15%; /* Increased left padding for desktop */
+    padding-right: 15%; /* Increased right padding for desktop */
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 12vw;
@@ -140,6 +152,10 @@ img.img-fluid {
 
   .intro {
     font-size: 5vw;
+  }
+
+  .project {
+    padding-right: 10%;
   }
 
   .content-text, .location {
