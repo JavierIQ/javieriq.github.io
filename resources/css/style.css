@@ -90,8 +90,7 @@ h1 {
 
 /* Projects Section */
 #projects {
-  padding: 100px 0;
-  background-color: #EDE8E4;
+  padding: 50px 0; /* Spacing above and below the section */
 }
 
 .projects-title {
@@ -102,7 +101,36 @@ h1 {
 .projects-subtitle {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
-  color: #666;
+}
+
+.project {
+  padding-left: 10%;
+}
+
+.project-year-tech {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px; /* Space between the date/tech and the title */
+}
+
+.project-title {
+  font-size: 40px; /* Larger font size for the project title */
+  font-family: 'Urbanist', sans-serif;
+  margin-top: 0;
+  font-weight: bolder;
+  margin-bottom: 10px; /* Space between the title and the description */
+}
+
+.project-description {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  margin-bottom: 20px; /* Space between the description and the image section */
+}
+
+img.img-fluid {
+  max-width: 100%; /* Ensure the image is responsive and fits its container */
+  height: auto;
 }
 
 @media (max-width: 768px) {
