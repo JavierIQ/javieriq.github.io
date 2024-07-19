@@ -6,10 +6,8 @@ body {
 
 header {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: 20px;
+  background-color: inherit;
 }
 
 .top-left {
@@ -43,6 +41,7 @@ main {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
 h1 {
